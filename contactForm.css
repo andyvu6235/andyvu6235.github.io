@@ -1,0 +1,146 @@
+html {
+  background-image: url('formBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family:'Times New Roman', Times, serif;
+}
+
+header {
+  margin-top: 8%
+}
+
+legend {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.mainWrapper {
+  display: grid;
+  grid-template-rows: 0.1fr 2fr;
+  row-gap: 5px;
+}
+
+h2 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, .9);
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 0.2fr 1.2fr;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr 0.1fr;
+  row-gap: 10px;
+  background-color: white;
+  border: 1.5px solid rgba(0, 0, 0, .2);
+  box-shadow: 0.5px 0.5px 0.5px;
+  border-radius: 0px 8px 8px 0px;
+  width: 100%;
+  margin-right: auto;
+  margin-left:auto;
+  padding: 30px;
+  border-collapse: collapse     ;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color:rgba(0, 0, 255, .5)
+}
+
+a:hover {
+  color: rgba(0, 0, 255, .5)
+}
+
+fieldset {
+  border-radius: 5px;
+}
+
+legend {
+  color: rgba(0, 0, 0, .5);
+}
+
+.buttonGroup {
+  margin-right: auto;
+  margin-left: auto;
+  height: 20px;
+}
+
+input[type=button], input[type=text], input[type=email], input[type=select] {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  width: 80%;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 100px;
+}
+
+form a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#error {
+  color: red;
+  font-weight: 600;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.contactWrapper {
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, .2);
+  border-radius: 8px 0px 0px 8px;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.contactIcon {
+  position: absolute;
+  top: 0;
+  left:40%;
+}
+
+.contactList p {
+  margin: 0;
+}
+
+.contactList {
+  display: grid;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+  row-gap: 5px ;
+  padding: 20px;
+
+}
+
+svg {
+  height: 250px; width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}

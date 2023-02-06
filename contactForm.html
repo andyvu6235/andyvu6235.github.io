@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Andy Vu Contact Form</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Contact Form Andy Hoang D Vu">
+<style>
+  html {
+    background-color: #FF5353;
+  }
+
+  body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0; margin-bottom:0;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px;
+    background-color: white;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .header_banner {
+    display: grid;
+    grid-template-columns: 0.2fr 4fr;
+  }
+
+  .main_wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  nav {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+    row-gap: 2px;
+    vertical-align: middle;
+    border-right: 2px solid black;
+  }
+
+  nav a {
+    padding-top: 10px;
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin:auto;
+  }
+
+  nav a:hover, nav a:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  .section {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  .form_header {
+    text-align: left;
+    text-indent: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  form {
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.8fr 0.2fr;
+    text-align: left;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer a {
+    color: blue;
+  }
+
+  footer a:hover, footer a:active {
+    color:rgba(0, 0, 255, 0.5);
+  }
+
+</style>
+</head>
+<body>
+ <!--
+  Name: Andy Hoang D Vu
+  Contact Form
+ --> 
+<header>
+  <div class="header_banner">
+    <div class="headshot_photo">
+      <img style="height:100px; width:100px; border-radius: 75px;" src="headphoto.jpg" alt="Andy Vu Portrait of Headshot">
+    </div>
+    <div class="main_heading">
+      <h1>Contact Form</h1>
+      <p>Student: Andy Hoang D Vu</p>
+    </div>
+  </div>
+</header>
+<div class="main_wrapper">
+  <nav>
+    <a href="https://hills.ccsf.edu/~avu14/finalproject.html">Homepage</a>
+    <a href="https://hills.ccsf.edu/~avu14/assignment.html">Assignments</a>
+    <a href="https://hills.ccsf.edu/~avu14/meet_up_report.html">MeetUp Report</a>
+    <a href="https://hills.ccsf.edu/~avu14/contact.html">Contact</a>
+  </nav>
+  <div class="section">
+    <div class="form_header">
+      <p>If you would like to contact me, Please email me with the link at the bottom of the page or fill out the contact form:</p>
+    </div>
+    <form>
+      <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" required>
+      </div>
+      <div>
+        <label for="middleInitial">Middle Initial:</label>
+        <input type="text" id="middleInitial" style="width: 15px;">
+      </div>
+      <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" required>
+      </div>
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required><br><br>
+      </div>
+      <textarea rows="10" cols="40" placeholder="Please Leave Any Questions:"></textarea>
+      <div></div>
+      <div>
+        <input type="button" value="Send Form">
+        <input type="reset" value="Clear Form">
+      </div>
+    </form>
+  </div>
+</div>
+<footer>
+  &copy;Andy Hoang D Vu<br>
+  <a href="mailto:avu14@mail.ccsf.edu">Email Address</a>
+</footer>
+</body>
+</html>
